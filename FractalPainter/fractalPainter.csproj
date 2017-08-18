@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>FractalPainting.Solved.Step05.App.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
@@ -115,6 +114,78 @@
     <Compile Include="Infrastructure\UiActionExtensions.cs" />
     <Compile Include="Infrastructure\XmlObjectSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solved\Step03\App\Actions\DragonFractalAction.cs" />
+    <Compile Include="Solved\Step03\App\Actions\ImageSettingsAction.cs" />
+    <Compile Include="Solved\Step03\App\Actions\KochFractalAction.cs" />
+    <Compile Include="Solved\Step03\App\Actions\PaletteSettingsAction.cs" />
+    <Compile Include="Solved\Step03\App\Actions\SaveImageAction.cs" />
+    <Compile Include="Solved\Step03\App\AppSettings.cs" />
+    <Compile Include="Solved\Step03\App\Fractals\DragonPainter.cs" />
+    <Compile Include="Solved\Step03\App\Fractals\DragonSettings.cs" />
+    <Compile Include="Solved\Step03\App\Fractals\DragonSettingsGenerator.cs" />
+    <Compile Include="Solved\Step03\App\Fractals\KochPainter.cs" />
+    <Compile Include="Solved\Step03\App\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solved\Step03\App\PictureBoxImageHolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Solved\Step03\App\Program.cs" />
+    <Compile Include="Solved\Step03\App\SettingsManager.cs" />
+    <Compile Include="Solved\Step05\App\Actions\DragonFractalAction.cs" />
+    <Compile Include="Solved\Step05\App\Actions\ImageSettingsAction.cs" />
+    <Compile Include="Solved\Step05\App\Actions\KochFractalAction.cs" />
+    <Compile Include="Solved\Step05\App\Actions\PaletteSettingsAction.cs" />
+    <Compile Include="Solved\Step05\App\Actions\SaveImageAction.cs" />
+    <Compile Include="Solved\Step05\App\AppSettings.cs" />
+    <Compile Include="Solved\Step05\App\Fractals\DragonPainter.cs" />
+    <Compile Include="Solved\Step05\App\Fractals\DragonSettings.cs" />
+    <Compile Include="Solved\Step05\App\Fractals\DragonSettingsGenerator.cs" />
+    <Compile Include="Solved\Step05\App\Fractals\IDragonPainterFactory.cs" />
+    <Compile Include="Solved\Step05\App\Fractals\KochPainter.cs" />
+    <Compile Include="Solved\Step05\App\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solved\Step05\App\PictureBoxImageHolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Solved\Step05\App\Program.cs" />
+    <Compile Include="Solved\Step05\App\SettingsManager.cs" />
+    <Compile Include="Solved\Step11\App\Actions\DragonFractalAction.cs" />
+    <Compile Include="Solved\Step11\App\Actions\ImageSettingsAction.cs" />
+    <Compile Include="Solved\Step11\App\Actions\KochFractalAction.cs" />
+    <Compile Include="Solved\Step11\App\Actions\PaletteSettingsAction.cs" />
+    <Compile Include="Solved\Step11\App\Actions\SaveImageAction.cs" />
+    <Compile Include="Solved\Step11\App\AppSettings.cs" />
+    <Compile Include="Solved\Step11\App\Fractals\DragonPainter.cs" />
+    <Compile Include="Solved\Step11\App\Fractals\DragonSettings.cs" />
+    <Compile Include="Solved\Step11\App\Fractals\DragonSettingsGenerator.cs" />
+    <Compile Include="Solved\Step11\App\Fractals\IDragonPainterFactory.cs" />
+    <Compile Include="Solved\Step11\App\Fractals\KochPainter.cs" />
+    <Compile Include="Solved\Step11\App\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solved\Step11\App\PictureBoxImageHolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Solved\Step11\App\Program.cs" />
+    <Compile Include="Solved\Step11\App\SettingsManager.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\DependencyInjector.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\FileBlobStorage.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\IBlobStorage.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\IImageDirectoryProvider.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\IImageHolder.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\IImageSettingsProvider.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\ImageSettings.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\INeed.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\IObjectSerializer.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\Palette.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\SettingsForm.cs" />
+    <Compile Include="Solved\Step11\Infrastructure\XmlObjectSerializer.cs" />
+    <Compile Include="Solved\Step11\Modified\EnumExtensions.cs" />
+    <Compile Include="Solved\Step11\Modified\IUiAction.cs" />
+    <Compile Include="Solved\Step11\Modified\MenuCategory.cs" />
+    <Compile Include="Solved\Step11\Modified\UiActionExtensions.cs" />
     <EmbeddedResource Include="App\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +199,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Solved\Step03\App\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solved\Step05\App\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solved\Step11\App\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.settings">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Generator>SettingsSingleFileGenerator</Generator>
